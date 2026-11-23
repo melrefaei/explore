@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore – discover and book trips to the most beautiful cities in the world.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🌍</text></svg>">
+  <title>Explore. – Discover the World</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container nav">
+      <a href="#home" class="logo">Explore<span>.</span></a>
+      <nav class="menu" id="menu">
+        <a href="#home" class="active">Home</a>
+        <a href="#destinations">Destinations</a>
+        <a href="#about">About Us</a>
+      </nav>
+      <a href="#destinations" class="btn btn-dark nav-btn">Explore Now</a>
+      <button class="burger" id="burger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="container hero-content">
+      <span class="pill">✦ Discover the world</span>
+      <h1>Explore The<br><span>Beautiful World</span></h1>
+      <p class="hero-text">Discover amazing places, explore different cultures and experience unforgettable journeys.</p>
+      <div class="hero-actions"><a href="#destinations" class="btn btn-orange">Start Exploring</a><a href="#about" class="btn btn-ghost">Learn more</a></div>
+    </div>
+  </section>
+
+  <section class="section" id="destinations">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Your next adventure</p>
+        <h2>Popular Destinations</h2>
+        <p class="sub">Explore some of the most beautiful cities in the world.</p>
+      </div>
+      <div class="cards" id="cards"></div>
+    </div>
+  </section>
+
+  <section class="section about" id="about">
+    <div class="container section-head">
+      <p class="eyebrow">About us</p>
+      <h2>Travel With Confidence</h2>
+      <p class="sub">We help travelers discover unique places, local cultures and unforgettable experiences around the globe.</p>
+    </div>
+  </section>
+
+
+  <!-- Booking modal -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="bk-title">
+      <button class="modal-close" id="modalClose" aria-label="Close">&times;</button>
+      <div class="modal-media" id="bkMedia">
+        <span class="bk-emoji emoji" id="bkEmoji"></span>
+        <img id="bkImg" alt="">
+        <div class="modal-caption"><h3 id="bkCity"></h3><p id="bkCountry"></p></div>
+      </div>
+      <div class="modal-form">
+        <div id="bkFormWrap">
+          <p class="eyebrow">Book your trip</p>
+          <h2 id="bk-title">Reserve your spot</h2>
+          <form id="bookingForm" novalidate>
+            <div class="field"><label for="bkName">Full name</label><input id="bkName" type="text" placeholder="John Doe" required></div>
+            <div class="row">
+              <div class="field"><label for="bkEmail">Email</label><input id="bkEmail" type="email" placeholder="you@email.com" required></div>
+              <div class="field"><label for="bkPhone">Phone</label><input id="bkPhone" type="tel" placeholder="+20 100 000 0000" required></div>
+            </div>
+            <div class="row">
+              <div class="field"><label for="bkDate">Travel date</label><input id="bkDate" type="date" required></div>
+              <div class="field"><label for="bkGuests">Travelers</label><input id="bkGuests" type="number" min="1" max="10" value="1" required></div>
+            </div>
+            <div class="field"><label for="bkNotes">Notes (optional)</label><textarea id="bkNotes" rows="2" placeholder="Anything we should know?"></textarea></div>
+            <p class="form-error" id="bkError"></p>
+            <div class="total"><span>Estimated total</span><strong id="bkTotal"></strong></div>
+            <button type="submit" class="btn btn-orange full">Confirm booking</button>
+          </form>
+        </div>
+        <div class="success" id="bkSuccess" hidden>
+          <div class="check">✓</div>
+          <h2>Booking confirmed!</h2>
+          <p id="bkSuccessMsg"></p>
+          <button class="btn btn-dark" id="bkDone">Done</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#home" class="logo">Explore<span>.</span></a>
+      <p>Created by <a href="https://www.linkedin.com/in/moelrefaei" target="_blank" rel="noopener noreferrer" class="creator">@moelrefaei</a></p>
+      <p class="copy">&copy; <span id="year"></span> Explore. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
