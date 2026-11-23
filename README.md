@@ -12,12 +12,12 @@ A modern, responsive travel landing page built with **HTML5, CSS3 and vanilla Ja
 
 ## Features
 
-- 🎨 Modern design: glass navbar, gradient hero, rounded cards and soft shadows
-- 📱 Fully responsive, with a hamburger menu on mobile
-- 🏙️ Destination cards generated from a JavaScript array
-- 🖼️ Full-width place photos, with the place's emoji shown on hover
-- 📝 Booking modal with the place's photo, validation and a live price estimate
-- ✨ Sticky header, active-link highlighting and smooth scrolling
+- Modern design: glass navbar, gradient hero, rounded cards and soft shadows
+- Fully responsive, with a hamburger menu on mobile
+- Destination cards generated from a JavaScript array
+- Full-width place photos, with the place's emoji shown on hover
+- Booking modal with the place's photo, validation and a live price estimate
+- Sticky header, active-link highlighting and smooth scrolling
 
 ## Tech Stack
 
@@ -51,7 +51,7 @@ explore/
 
 1. Clone the repository
    ```bash
-   git clone https://github.com/<your-username>/<repo-name>.git
+   git clone https://github.com/melrefaei/explore.git
    ```
 2. Open the folder and double-click `index.html` — or use a local server such as the VS Code **Live Server** extension.
 
